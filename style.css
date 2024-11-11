@@ -1,0 +1,85 @@
+
+@font-face {
+    font-family: RockFont;
+    src: url("Funkrocker.otf");
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+ 
+  .masthead {
+    background: rgb(230, 221, 221);
+    height: 5em;
+  }
+  
+  .centeredText {
+    text-align: center;
+  }
+  
+  .site-title {
+    color: white;
+    font-family: RockFont;
+    font-size: 80px;
+    font-weight: bolder;
+  }
+  
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .card {
+    width: 250px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .card-info {
+    padding: 15px;
+  }
+  
+  .card-info h4 {
+    font-family: RockFont;
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .card-info p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  
+  
+  
